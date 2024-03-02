@@ -1,0 +1,12 @@
+.carousel-contents {
+  width: 55%;
+}
+.carsourel-container {
+  gap: 50px;
+  display: flex;
+  place-content: center;
+  justify-content: space-around;
+}
+img {
+  border-radius: 10px;
+}

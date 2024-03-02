@@ -1,0 +1,33 @@
+.company-img img {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 5px lightslategrey;
+  height: 280px;
+}
+.quotes-cont {
+  padding: 40px;
+  display: flex;
+  place-content: center;
+  gap: 40px;
+}
+.qoutes-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.qoutes-content h3 {
+  align-self: center;
+  line-height: 60px;
+  text-align: justify;
+  width: 80%;
+  font-weight: bolder;
+  font-family: "serif";
+}
+
+.qoutes-content h4 {
+  font-family: "serif";
+  font-weight: bold;
+  font-style: italic;
+  align-self: flex-end;
+}

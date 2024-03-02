@@ -1,0 +1,29 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 25px;
+}
+.input-container {
+  text-align: center;
+  margin-left: 30px;
+  padding: 5px;
+}
+.Logo {
+  display: flex;
+  gap: 25px;
+  place-items: center;
+}
+.company-name h3 {
+  font-family: serif;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+.Logo img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
