@@ -9,7 +9,7 @@ const CarouselComp = () => {
   return (
     <div className="carsourel-container">
       <div>
-        <div className="list-group ">
+        <div className="list-group group">
           <a
             href="#"
             className="list-group-item bg-secondary list-group-item-action active"
@@ -72,7 +72,7 @@ const CarouselComp = () => {
         </Carousel>
       </div>
       <div>
-        <div className="list-group">
+        <div className="list-group group">
           <a
             href="#"
             className="list-group-item bg-danger list-group-item-action active"

@@ -1,6 +1,9 @@
 .carousel-contents {
   width: 55%;
 }
+.group1 {
+  order: 1;
+}
 .carsourel-container {
   gap: 50px;
   display: flex;
@@ -9,4 +12,20 @@
 }
 img {
   border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .carousel-contents {
+    order: -1;
+    place-self: center;
+  }
+  .carsourel-container {
+    flex-direction: column;
+  }
+  .carousel-contents {
+    width: 90%;
+  }
+  .group {
+    display: flex;
+    padding: 20px;
+  }
 }

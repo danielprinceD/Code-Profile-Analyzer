@@ -26,12 +26,15 @@ export const Header = () => {
           </div>
         </div>
       </div>
-      <div className="Nav-">
+      <div className="Nav-bar">
         <Button className="btn btn-outline-danger" data="Home"></Button>
         <span> </span>
         <Button className="btn btn-outline-danger" data="About Us"></Button>
         <span> </span>
         <Button className="btn btn-outline-danger" data="Contact Us"></Button>
+      </div>
+      <div className="abs">
+        <button className="btn btn-outline-danger px-3 py-2"> = </button>
       </div>
     </div>
   );

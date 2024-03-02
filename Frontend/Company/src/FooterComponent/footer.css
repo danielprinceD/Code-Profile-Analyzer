@@ -1,0 +1,117 @@
+.FooterContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #242424;
+  gap: 30px;
+}
+
+.container1,
+.container2,
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: column;
+}
+.foot-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 100px;
+  padding: 50px;
+}
+.social-icons {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.FooterContainer {
+  width: 100%;
+  color: white;
+  padding: 20px 0;
+}
+
+.FooterContainer h3 {
+  color: white;
+  font-weight: 600;
+}
+
+.FooterContainerooter a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.container1 a:hover {
+  display: inline;
+  color: #bfbdbd;
+}
+.container2 a:hover {
+  display: inline;
+  color: #bfbdbd;
+}
+.container3 a:hover {
+  display: inline;
+  color: #bfbdbd;
+}
+.container4 {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  place-items: center;
+  gap: 70px;
+  padding: 40px;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  place-content: center;
+  gap: 10px;
+}
+
+.items a {
+  color: white;
+  text-decoration: none;
+}
+.item1 a {
+  text-decoration: none;
+  color: rgb(216, 55, 55);
+}
+.item1 {
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  gap: 120px;
+}
+
+.item1 a:hover {
+  color: #bfbdbd;
+}
+.item2 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .FooterContainer .container1,
+  .FooterContainer .container2,
+  .FooterContainer .container3 {
+    width: 100%;
+  }
+  .items {
+    gap: 5px;
+  }
+  .FooterContainer {
+    text-align: center;
+  }
+  .item1 {
+    gap: 20px;
+    place-content: center;
+  }
+}

@@ -31,3 +31,8 @@
   font-style: italic;
   align-self: flex-end;
 }
+@media (max-width: 768px) {
+  .quotes-cont {
+    flex-direction: column;
+  }
+}
