@@ -1,5 +1,4 @@
 import "./form.css";
-import Button from "../Components/Button";
 import { useState } from "react";
 import axios from "axios";
 
@@ -35,7 +34,7 @@ const Form = () => {
   return (
     <div className="form-container">
       <center>
-        <h2 className="text-secondary">Appilcation Form</h2>
+        <h2 className="">Appilcation Form</h2>
       </center>
       <br />
       <form action="post">
@@ -139,19 +138,19 @@ const Form = () => {
             value={mob}
             onChange={(e) => setMob(e.target.value)}
           />
-          <div className="form-items">
-            <label htmlFor="resume" className="form-label">
-              Upload Your Resume
-            </label>
-            <input
-              type="file"
-              className="form-control"
-              id="resume"
-              name="resume"
-              value={resume}
-              onChange={(e) => setResume(e.target.files[0])}
-            />
-          </div>
+        </div>
+        <div className="form-items">
+          <label htmlFor="resume" className="form-label">
+            Upload Your Resume
+          </label>
+          <input
+            type="file"
+            className="form-control"
+            id="resume"
+            name="resume"
+            value={resume}
+            onChange={(e) => setResume(e.target.files[0])}
+          />
         </div>
         <div className="btn-item-form">
           <button
