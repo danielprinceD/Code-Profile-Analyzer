@@ -1,0 +1,15 @@
+.form-container form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  place-items: center;
+  gap: 20px;
+}
+.form-items {
+  gap: 50px;
+  flex-direction: row;
+  width: 50%;
+}
+.btn-item-form {
+  padding: 20px;
+}
