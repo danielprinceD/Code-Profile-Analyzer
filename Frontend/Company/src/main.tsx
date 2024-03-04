@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Components/Header.tsx";
 import "./index.css";
+import NavBar from "./NavBar/NavBar.tsx";
 import Quotes from "./MiddleComponents/Quotes.tsx";
 import Form from "./FormComponent/Form.tsx";
 import Footer from "./FooterComponent/Footer.tsx";
@@ -29,10 +30,12 @@ const detail3 = {
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <div className="main-container">
-      <Header />
+      <div>
+        <Header />
+        <NavBar />
+      </div>
       <CarouselComp />
       <Quotes />
-      <ProductCard {...detail1} />
       <Form />
       <Footer />
     </div>

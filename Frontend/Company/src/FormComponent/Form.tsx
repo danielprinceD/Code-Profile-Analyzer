@@ -28,7 +28,13 @@ const Form = () => {
       method: "post",
       url: "http://localhost:8000/api/",
       data: formField,
-    });
+    })
+      .then(() => {
+        console.log("Success");
+      })
+      .catch(() => {
+        console.log("Not Success");
+      });
   };
 
   return (
