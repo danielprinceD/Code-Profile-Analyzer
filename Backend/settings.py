@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-de4is5(r4q$57sy3a3mnfozkktxp^l83(tis2fr501ze67af-@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.vercel.app']
 
@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'rest_framework'
 ]
 
-WSGI_APPLICATION = 'vercel_app.wsgi.app'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -57,7 +56,6 @@ ROOT_URLCONF = 'Backend.urls'
 
 STATIC_FILES = Path(__file__).parent.parent.joinpath('Frontend').joinpath('Company')
 
-print(STATIC_FILES)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
