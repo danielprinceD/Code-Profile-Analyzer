@@ -6,5 +6,19 @@
 .main-container {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .header-container {
+    box-shadow: black 0px 0px 20px 1px;
+  }
+}
+.head-nav-container {
+  box-shadow: black 0px 5px 30px 5px;
 }

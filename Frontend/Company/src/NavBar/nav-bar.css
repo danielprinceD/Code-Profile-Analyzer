@@ -1,0 +1,13 @@
+.hover-change:hover {
+  background-color: rgb(255, 255, 255);
+  color: red !important;
+  transition: 0.9s ease;
+}
+.hover-change {
+  border-radius: 50px;
+}
+@media (max-width: 768px) {
+  .navigation-container {
+    display: none;
+  }
+}

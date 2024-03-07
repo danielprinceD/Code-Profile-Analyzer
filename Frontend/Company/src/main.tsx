@@ -7,28 +7,11 @@ import { Home } from "./home.tsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./FooterComponent/Footer.tsx";
 import ProductCard from "./ProductCard/ProductCard.tsx";
-const detail1 = {
-  name: "Arduino UNO Board",
-  description: "Our Best Selling Product",
-
-  price: 1000,
-};
-const detail2 = {
-  name: "Arduino UNO Board",
-  description: "Our Best Selling Product",
-
-  price: 1000,
-};
-const detail3 = {
-  name: "Arduino UNO Board",
-  description: "Our Best Selling Product",
-
-  price: 1000,
-};
+import About from "./Components/about";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <div className="main-container">
-    <div>
+    <div className="sticky-top bg-white head-nav-container">
       <Header />
       <NavBar />
     </div>
@@ -36,6 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/home" element={<Home />}></Route>
         <Route path="/products" element={<ProductCard />}></Route>
+        <Route path="/about" element={<About />}></Route>
       </Routes>
     </BrowserRouter>
     <Footer />

@@ -1,0 +1,26 @@
+.about-top-content {
+  display: flex;
+  background-image: url(../assets/Company.jpg);
+  height: 90vh;
+  background-attachment: fixed;
+  position: relative;
+  place-content: center;
+  place-items: center;
+  filter: brightness(80%);
+}
+.about-data {
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  box-shadow: black -10px 20px 30px 10px;
+  padding: 2%;
+  text-shadow: 2px 2px 1px white;
+  color: black;
+}
+.about-data h2 {
+  font-weight: bold;
+}
+.about-data h6 {
+  font-weight: 600;
+  font-size: large;
+}

@@ -31,7 +31,9 @@ export const Header = () => {
           <Button className="btn btn-outline-danger" data="Home"></Button>
         </a>
         <span> </span>
-        <Button className="btn btn-outline-danger" data="About Us"></Button>
+        <a href="/about">
+          <Button className="btn btn-outline-danger" data="About Us"></Button>
+        </a>
         <span> </span>
         <a href="#foot">
           <Button className="btn btn-outline-danger" data="Contact Us"></Button>

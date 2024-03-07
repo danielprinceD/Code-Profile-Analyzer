@@ -32,32 +32,34 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex flex-column align-items-center gap-5">
+      <div className="d-flex flex-column align-items-center justify-content-center ">
         <div>
           <h1 className="text-danger">Contact Us</h1>
         </div>
-        <div className="d-flex w-50 flex-row gap-5 justify-content-around">
+        <div className="d-flex w-50 flex-row gap-5 justify-content-around flex-wrap">
           <div className="">
-            <table className="d-flex flex-column">
-              <tr>
-                <th className="text-danger">Email : </th>
-                <tr>aaravcompany@gmail.com</tr>
-              </tr>
-              <tr>
-                <th className="text-danger">Phone Number :</th>
-                <tr>98765 43210</tr>
-              </tr>
-              <tr>
-                <th className="text-danger">Fax :</th>
-                <tr>98765 43210</tr>
-              </tr>
-              <tr>
-                <th className="text-danger">Transport :</th>
-                <tr>98765 43210</tr>
-              </tr>
-            </table>
+            <center>
+              <table className="d-flex flex-column">
+                <tr>
+                  <th className="text-danger">Email : </th>
+                  <tr>aaravcompany@gmail.com</tr>
+                </tr>
+                <tr>
+                  <th className="text-danger">Phone Number :</th>
+                  <tr>98765 43210</tr>
+                </tr>
+                <tr>
+                  <th className="text-danger">Fax :</th>
+                  <tr>98765 43210</tr>
+                </tr>
+                <tr>
+                  <th className="text-danger">Transport :</th>
+                  <tr>98765 43210</tr>
+                </tr>
+              </table>
+            </center>
           </div>
-          <form className="d-flex flex-column  gap-4">
+          <form className="d-flex flex-column gap-4">
             <div className="row">
               <div className="col">
                 <input
@@ -94,7 +96,7 @@ const Footer = () => {
             </div>
             <center>
               <div>
-                <button className="btn btn-danger w-25">Submit</button>
+                <button className="btn btn-danger ">Submit</button>
               </div>
             </center>
           </form>

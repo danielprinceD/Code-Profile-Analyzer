@@ -6,9 +6,11 @@ import Footer from "./FooterComponent/Footer";
 
 export const Home = () => {
   return (
-    <div>
+    <div className="home-container">
       <CarouselComp />
-      <Quotes />
+      <div className="d-flex flex-column flex-wrap p-4">
+        <Quotes />
+      </div>
       <Form />
     </div>
   );

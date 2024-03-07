@@ -10,7 +10,7 @@ const Quotes = () => {
         </h3>
         <h4 className="text-danger">- Theodore Roosevelt </h4>
       </div>
-      <div className="company-img ">
+      <div className="company-img d-flex justify-content-center">
         <img src={company} alt="" />
       </div>
     </div>
