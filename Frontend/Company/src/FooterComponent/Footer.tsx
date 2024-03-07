@@ -2,7 +2,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <div className="FooterContainer">
+    <div className="FooterContainer" id="foot">
       <div className="foot-content">
         <div className="container1">
           <h2 className="text-danger">About TI</h2>
@@ -30,6 +30,74 @@ const Footer = () => {
             <a href="">Ordering FAQs</a>
             <a href="">Authorized distributors</a>
           </div>
+        </div>
+      </div>
+      <div className="d-flex flex-column align-items-center gap-5">
+        <div>
+          <h1 className="text-danger">Contact Us</h1>
+        </div>
+        <div className="d-flex w-50 flex-row gap-5 justify-content-around">
+          <div className="">
+            <table className="d-flex flex-column">
+              <tr>
+                <th className="text-danger">Email : </th>
+                <tr>aaravcompany@gmail.com</tr>
+              </tr>
+              <tr>
+                <th className="text-danger">Phone Number :</th>
+                <tr>98765 43210</tr>
+              </tr>
+              <tr>
+                <th className="text-danger">Fax :</th>
+                <tr>98765 43210</tr>
+              </tr>
+              <tr>
+                <th className="text-danger">Transport :</th>
+                <tr>98765 43210</tr>
+              </tr>
+            </table>
+          </div>
+          <form className="d-flex flex-column  gap-4">
+            <div className="row">
+              <div className="col">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="First name"
+                />
+              </div>
+              <div className="col">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Last name"
+                />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Phone Number"
+                />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Email Address"
+                />
+              </div>
+            </div>
+            <center>
+              <div>
+                <button className="btn btn-danger w-25">Submit</button>
+              </div>
+            </center>
+          </form>
         </div>
       </div>
       <div className="container4">

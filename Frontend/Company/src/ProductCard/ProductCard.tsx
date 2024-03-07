@@ -1,55 +1,748 @@
 import "./productcard.css";
-import Image from "../assets/board.jpg";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-
-interface brand {
-  name: string;
-  description: string;
-  price: number;
-}
-const ProductCard = ({ name, description, price }: brand) => {
+import {
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBCard,
+  MDBCardBody,
+  MDBCardImage,
+  MDBIcon,
+} from "mdb-react-ui-kit";
+const ProductCard = () => {
   return (
     <div className="product-card-container">
-      <Carousel>
-        <div className="cards-title">
-          <h2>Our Best Products</h2>
-        </div>
-        <div className="title-product">
-          <a className="product-card text-decoration-none">
-            <img className="product-card__image" src={Image} />
-            <p className="product-card__brand text-danger ">{name}</p>
-            <p className="product-card__description text-secondary text-dark">
-              {description}
-            </p>
-            <button className="btn btn-outline-danger my-3">₹ {price}</button>
-          </a>
-          <a className="product-card text-decoration-none">
-            <img className="product-card__image" src={Image} />
-            <p className="product-card__brand text-danger">{name}</p>
-            <p className="product-card__description text-dark">{description}</p>
-            <button className="btn btn-outline-danger my-3">₹ {price}</button>
-          </a>
-          <a className="product-card text-decoration-none">
-            <img className="product-card__image" src={Image} />
-            <p className="product-card__brand text-danger">{name}</p>
-            <p className="product-card__description text-dark">{description}</p>
-            <button className="btn btn-outline-danger my-3">₹ {price}</button>
-          </a>
-          <a className="product-card text-decoration-none">
-            <img className="product-card__image " src={Image} />
-            <p className="product-card__brand text-danger">{name}</p>
-            <p className="product-card__description text-dark">{description}</p>
-            <button className="btn btn-outline-danger my-3">₹ {price}</button>
-          </a>
-          <a className="product-card text-decoration-none">
-            <img className="product-card__image " src={Image} />
-            <p className="product-card__brand text-danger">{name}</p>
-            <p className="product-card__description text-dark">{description}</p>
-            <button className="btn btn-outline-danger my-3">₹ {price}</button>
-          </a>
-        </div>
-      </Carousel>
+      <MDBContainer fluid className="my-2">
+        <MDBRow className="p-5 ">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x4</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/4.webp"
+                position="top"
+                alt="Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1099</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">HP Notebook</h5>
+                  <h5 className="text-dark mb-0">$999</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">6</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x2</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/7.webp"
+                position="top"
+                alt="Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1199</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">HP Envy</h5>
+                  <h5 className="text-dark mb-0">$1099</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">7</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon far icon="star" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x3</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/5.webp"
+                position="top"
+                alt="Gaming Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1399</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">Toshiba B77</h5>
+                  <h5 className="text-dark mb-0">$1299</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">5</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star-half-alt" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+        </MDBRow>
+        <MDBRow className="p-5 ">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x4</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/4.webp"
+                position="top"
+                alt="Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1099</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">HP Notebook</h5>
+                  <h5 className="text-dark mb-0">$999</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">6</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x2</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/7.webp"
+                position="top"
+                alt="Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1199</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">HP Envy</h5>
+                  <h5 className="text-dark mb-0">$1099</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">7</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon far icon="star" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x3</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/5.webp"
+                position="top"
+                alt="Gaming Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1399</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">Toshiba B77</h5>
+                  <h5 className="text-dark mb-0">$1299</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">5</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star-half-alt" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+        </MDBRow>
+        <MDBRow className="p-5 ">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x4</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/4.webp"
+                position="top"
+                alt="Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1099</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">HP Notebook</h5>
+                  <h5 className="text-dark mb-0">$999</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">6</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x2</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/7.webp"
+                position="top"
+                alt="Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1199</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">HP Envy</h5>
+                  <h5 className="text-dark mb-0">$1099</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">7</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon far icon="star" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x3</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/5.webp"
+                position="top"
+                alt="Gaming Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1399</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">Toshiba B77</h5>
+                  <h5 className="text-dark mb-0">$1299</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">5</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star-half-alt" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+        </MDBRow>
+        <MDBRow className="p-5 ">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x4</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/4.webp"
+                position="top"
+                alt="Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1099</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">HP Notebook</h5>
+                  <h5 className="text-dark mb-0">$999</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">6</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x2</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/7.webp"
+                position="top"
+                alt="Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1199</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">HP Envy</h5>
+                  <h5 className="text-dark mb-0">$1099</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">7</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon far icon="star" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x3</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/5.webp"
+                position="top"
+                alt="Gaming Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1399</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">Toshiba B77</h5>
+                  <h5 className="text-dark mb-0">$1299</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">5</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star-half-alt" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+        </MDBRow>
+        <MDBRow className="p-5 ">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x4</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/4.webp"
+                position="top"
+                alt="Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1099</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">HP Notebook</h5>
+                  <h5 className="text-dark mb-0">$999</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">6</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x2</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/7.webp"
+                position="top"
+                alt="Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1199</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">HP Envy</h5>
+                  <h5 className="text-dark mb-0">$1099</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">7</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon far icon="star" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+            <MDBCard>
+              <div className="d-flex justify-content-between p-3">
+                <p className="lead mb-0">Today's Combo Offer</p>
+                <div
+                  className="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                  style={{ width: "35px", height: "35px" }}
+                >
+                  <p className="text-white mb-0 small">x3</p>
+                </div>
+              </div>
+              <MDBCardImage
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/5.webp"
+                position="top"
+                alt="Gaming Laptop"
+              />
+              <MDBCardBody>
+                <div className="d-flex justify-content-between">
+                  <p className="small">
+                    <a href="#!" className="text-muted">
+                      Laptops
+                    </a>
+                  </p>
+                  <p className="small text-danger">
+                    <s>$1399</s>
+                  </p>
+                </div>
+
+                <div className="d-flex justify-content-between mb-3">
+                  <h5 className="mb-0">Toshiba B77</h5>
+                  <h5 className="text-dark mb-0">$1299</h5>
+                </div>
+
+                <div className="d-flex justify-content-between mb-2">
+                  <p className="text-muted mb-0">
+                    Available: <span className="fw-bold">5</span>
+                  </p>
+                  <div className="ms-auto text-warning">
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star" />
+                    <MDBIcon fas icon="star-half-alt" />
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
     </div>
   );
 };

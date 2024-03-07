@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 import "./header.css";
 import logo from "../assets/comp.jpg";
-
+import { NavLink } from "react-bootstrap";
 export const Header = () => {
   return (
     <div className="header-container ">
@@ -27,11 +27,15 @@ export const Header = () => {
         </div>
       </div>
       <div className="Nav-bar">
-        <Button className="btn btn-outline-danger" data="Home"></Button>
+        <a href="/home">
+          <Button className="btn btn-outline-danger" data="Home"></Button>
+        </a>
         <span> </span>
         <Button className="btn btn-outline-danger" data="About Us"></Button>
         <span> </span>
-        <Button className="btn btn-outline-danger" data="Contact Us"></Button>
+        <a href="#foot">
+          <Button className="btn btn-outline-danger" data="Contact Us"></Button>
+        </a>
       </div>
       <div className="abs">
         <button className="btn btn-outline-danger px-3 py-2"> = </button>
