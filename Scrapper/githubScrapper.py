@@ -16,14 +16,14 @@ def getProfile(name):
     url = 'https://api.github.com/users/'
     req = requests.get( url + name).text
     data = json.loads(req)
-    if 'avatar_url' in data : 
-        return data['avatar_url']
-    return "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    if 'avatar_url' not in data:
+        return "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    return data['avatar_url']
 
 def getSteak(name):
-    return 'https://streak-stats.demolab.com?user='+ name + '&locale=en&mode=daily&theme=aura&hide_border=false&border_radius=5" height="150'    
+    return 'https://streak-stats.demolab.com?user='+ name + '&locale=en&mode=daily&hide_border=false&border_radius=5'    
     
 def getGraph(name):
-    return 'https://github-readme-activity-graph.vercel.app/graph?username='+name+'&theme=dracula'
+    return 'https://github-readme-activity-graph.vercel.app/graph?username='+name
 def getProgram(name):
-    return 'https://github-readme-stats.vercel.app/api/top-langs?username='+name + '&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=aura&hide_border=false'
+    return 'https://github-readme-stats.vercel.app/api/top-langs?username='+name + '&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&hide_border=false'

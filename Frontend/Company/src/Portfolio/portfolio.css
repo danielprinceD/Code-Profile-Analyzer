@@ -21,7 +21,8 @@
   padding: 20px;
 }
 .gh-profile img {
-  width: 20%;
+  width: 50%;
+  border-radius: 50%;
 }
 .github-top-2 img {
   border-radius: 5%;

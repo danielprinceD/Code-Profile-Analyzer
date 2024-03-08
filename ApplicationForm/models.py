@@ -12,18 +12,18 @@ class ApplicationModel(models.Model):
     @property
     def ghProfile(self ):
         self.github = self.github.strip()
-        return githubScrapper.getProfile(self.github)
+        return githubScrapper.getProfile(self.github).strip()
     @property
     def ghProgram(self ):
         self.github = self.github.strip()
-        return githubScrapper.getProgram(self.github)
+        return githubScrapper.getProgram(self.github).strip()
     @property
     def ghSteak(self ):
         self.github = self.github.strip()
-        return githubScrapper.getSteak(self.github)
+        return githubScrapper.getSteak(self.github).strip()
     @property
     def ghGraph(self):
         self.github = self.github.strip()
-        return githubScrapper.getGraph(self.github)
+        return githubScrapper.getGraph(self.github).strip()
     
         
