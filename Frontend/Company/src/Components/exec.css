@@ -38,6 +38,7 @@
   display: flex;
   flex-direction: column;
   padding: 50px;
+  flex-wrap: wrap;
 }
 .profile-right {
   border-radius: 30px;
@@ -62,4 +63,21 @@
 .profile-right:hover,
 .profile-left:hover {
   box-shadow: #2c2b2b 0px 0px 10px 5px;
+}
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+  }
+  .profile-right,
+  .profile-left {
+    width: 100%;
+  }
+  .profile-right {
+    padding: 10% 0 10% 0;
+    height: 50vh;
+  }
+  .exec-contribute-content {
+    padding: 0 20px 0px 10px;
+    overflow-y: auto;
+  }
 }
