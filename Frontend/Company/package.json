@@ -1,4 +1,5 @@
 {
+  "homepage": "https://danielprinceD.github.io/Code-Profile-Analyzer/Frontend/Company",
   "name": "company",
   "private": true,
   "version": "0.0.0",
@@ -13,6 +14,7 @@
     "axios": "^1.6.7",
     "blobshape": "^1.0.0",
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.1.1",
     "mdb-react-ui-kit": "^7.2.0",
     "react": "^18.2.0",
     "react-axios": "^2.0.6",
