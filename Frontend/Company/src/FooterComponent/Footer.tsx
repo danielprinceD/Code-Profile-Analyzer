@@ -32,8 +32,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex flex-column align-items-center justify-content-center ">
-        <div>
+      <div className="d-flex flex-column align-items-center justify-content-center gap-2">
+        <div className="py-5">
           <h1 className="text-danger">Contact Us</h1>
         </div>
         <div className="d-flex w-50 flex-row gap-5 justify-content-around flex-wrap">

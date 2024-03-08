@@ -1,21 +1,36 @@
 .about-top-content {
   display: flex;
   background-image: url(../assets/Company.jpg);
-  height: 90vh;
   background-attachment: fixed;
   position: relative;
   place-content: center;
   place-items: center;
+  flex-direction: column;
   filter: brightness(80%);
+  padding: 10% 0 10% 0;
+  gap: 240px;
+}
+.about-container {
+}
+
+.list-style-color {
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+.list-style-color-head {
+  font-weight: bolder;
+  font-size: xx-large;
 }
 .about-data {
   text-align: center;
-  position: absolute;
-  top: 15%;
+  filter: brightness(150%) !important;
+  width: 75%;
   box-shadow: black -10px 20px 30px 10px;
   padding: 2%;
-  text-shadow: 2px 2px 1px white;
-  color: black;
+  text-shadow: 2px 2px 1px black;
+  color: white;
 }
 .about-data h2 {
   font-weight: bold;
@@ -23,4 +38,89 @@
 .about-data h6 {
   font-weight: 600;
   font-size: large;
+}
+.about-blob-img img {
+  width: 35%;
+}
+.blob-list {
+  list-style-type: none;
+  display: flex;
+  gap: 8px;
+}
+
+.about-blob-containter {
+  filter: brightness(100%) !important;
+  text-shadow: 2px 1px 1px black;
+  box-shadow: black -10px 20px 30px 10px;
+
+  color: white;
+  display: inline-flex;
+  flex-direction: row;
+  place-items: center;
+  place-content: center;
+  justify-content: space-evenly;
+  width: 75%;
+  flex-wrap: wrap;
+  padding: 3% 0% 3% 0%;
+}
+.about-blob-content {
+  width: 60%;
+}
+.about-blob-img {
+  width: 10%;
+  display: contents;
+}
+.about-year-container {
+  box-shadow: black -10px 20px 30px 10px;
+  width: 75%;
+  text-shadow: 2px 1px 1px black;
+  color: white;
+}
+.about-year-left {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+.about-year-left h1,
+.about-year-right h1 {
+  font-size: 100px;
+}
+.about-year-right-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  overflow-y: scroll;
+  height: 50vh;
+}
+.about-year-single {
+  align-items: center;
+  padding: 0% 0 22% 0;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  flex-wrap: wrap;
+}
+.cont-about {
+  display: flex;
+  flex-direction: column;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d32020;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #df5a5a;
 }

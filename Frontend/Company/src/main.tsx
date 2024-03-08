@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./FooterComponent/Footer.tsx";
 import ProductCard from "./ProductCard/ProductCard.tsx";
 import About from "./Components/about";
+import Executive from "./Components/Executive.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <div className="main-container">
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/home" element={<Home />}></Route>
         <Route path="/products" element={<ProductCard />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/executives" element={<Executive />}></Route>
       </Routes>
     </BrowserRouter>
     <Footer />
