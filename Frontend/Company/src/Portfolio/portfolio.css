@@ -34,3 +34,14 @@
   border: px solid black;
   color: black;
 }
+.leetcode-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  text-align: center;
+}
+.loader {
+  width: 20vh;
+  height: 20vh;
+}

@@ -1,5 +1,7 @@
 import requests
 import json
+import os
+from pathlib import Path
 from bs4 import BeautifulSoup
 url = 'https://github.com/'
 def GitChecker(name):
@@ -10,14 +12,14 @@ def getContribution(name):
     req = requests.get(url + name)
     text = BeautifulSoup(req.content , 'lxml') 
     contribution = text.find('h2' , class_='f4 text-normal mb-2').text
-    contribution = contribution.replace('\n', '').strip().split(' ')[0]
+    return contribution.replace('\n', '').strip().split(' ')[0]
     
 def getProfile(name):
     url = 'https://api.github.com/users/'
     req = requests.get( url + name).text
     data = json.loads(req)
     if 'avatar_url' not in data:
-        return "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+        return "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
     return data['avatar_url']
 
 def getSteak(name):
