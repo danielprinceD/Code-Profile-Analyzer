@@ -50,29 +50,29 @@ const CarouselComp = () => {
           <Carousel.Item interval={3500}>
             <img className="d-block w-100" src={img1} alt="Image One" />
             <Carousel.Caption>
-              <h3></h3>
-              <p>Sample Text for Image One</p>
+              <h3>Make yourself Yonko</h3>
+              <p>Arigatho</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={3500}>
             <img className="d-block w-100" src={img2} alt="Image Two" />
             <Carousel.Caption>
-              <h3>Label for second slide</h3>
-              <p>Sample Text for Image Two</p>
+              <h3>Innovate New</h3>
+              <p>Create an Innovative Environment</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={3500}>
             <img className="d-block w-100" src={img3} alt="Image Two" />
             <Carousel.Caption>
-              <h3>Label for second slide</h3>
-              <p>Sample Text for Image Two</p>
+              <h3>Get the LeaderShip</h3>
+              <p>Upskill the momentem of LeaderShip Quality</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={3500}>
             <img className="d-block w-100" src={img4} alt="Image Two" />
             <Carousel.Caption>
-              <h3>Label for second slide</h3>
-              <p>Sample Text for Image Two</p>
+              <h3>Become a Techie</h3>
+              <p>Technology pave the path to Extrodinary Things</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

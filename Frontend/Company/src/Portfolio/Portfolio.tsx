@@ -38,6 +38,7 @@ const Portfolio = () => {
           </div>
         </>
       ) : (
+        formData &&
         formData.map((x) => (
           <div className="github-container w-75 " data-aos="slide-right">
             <div className="github-top d-flex flex-column align-items-center">

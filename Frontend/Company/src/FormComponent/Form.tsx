@@ -30,11 +30,11 @@ const Form = () => {
       url: "http://127.0.0.1:8000/api/",
       data: formField,
     })
-      .then(() => {
-        console.log("Success");
+      .then((req) => {
+        alert("Registed Successfully" + req);
       })
-      .catch(() => {
-        console.log("Not Success");
+      .catch((e) => {
+        alert("Failed to Submit " + e);
       });
   };
 
@@ -48,7 +48,7 @@ const Form = () => {
         <h2 className="">Appilcation Form</h2>
       </center>
       <br />
-      <form action="post" data-aos="zoom-in">
+      <form data-aos="zoom-in">
         <div className="form-items">
           <label htmlFor="name">Name : </label>
           <input

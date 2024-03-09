@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.css";
 import Blob from "../assets/Digital-Marketing.gif";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const about = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="about-container d-flex " style={{ margin: 0, padding: 0 }}>
       <div className="about-top-content">
-        <div className="about-data d-flex flex-column">
+        <div className="about-data d-flex flex-column" data-aos="fade-up">
           <h2 className="text-danger"> About Us</h2>
           <div>
             <h6>
@@ -17,7 +23,7 @@ const about = () => {
           </div>
         </div>
 
-        <div className="about-blob-containter">
+        <div className="about-blob-containter" data-aos="fade-up">
           <div className="about-blob-content">
             <ul className="blob-list d-flex flex-column ">
               <li>
@@ -69,13 +75,16 @@ const about = () => {
             <img src={Blob} alt="" />
           </div>
         </div>
-        <div className="about-year-container d-flex flex-row justify-content-center">
+        <div
+          className="about-year-container d-flex flex-row justify-content-center"
+          data-aos="fade-up"
+        >
           <div className="about-year-left">
             <h1 className="text-danger">20</h1>
           </div>
           <div className="about-year-right-container">
             <div className="about-year-single">
-              <div className="about-year-right">
+              <div className="about-year-right" data-aos="fade-up">
                 <h1>01</h1>
               </div>
               <div className="year-header">
@@ -94,7 +103,7 @@ const about = () => {
                 </h4>
               </div>
             </div>
-            <div className="about-year-single">
+            <div className="about-year-single" data-aos="fade-up">
               <div className="about-year-right">
                 <h1>05</h1>
               </div>

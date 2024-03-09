@@ -1,4 +1,7 @@
 import "./productcard.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import {
   MDBContainer,
   MDBRow,
@@ -9,11 +12,15 @@ import {
   MDBIcon,
 } from "mdb-react-ui-kit";
 const ProductCard = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="product-card-container">
       <MDBContainer fluid className="my-2">
-        <MDBRow className="p-5 ">
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+        <MDBRow className="p-5 " data-aos="fade">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
@@ -61,7 +68,7 @@ const ProductCard = () => {
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
@@ -109,7 +116,7 @@ const ProductCard = () => {
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
@@ -158,8 +165,8 @@ const ProductCard = () => {
             </MDBCard>
           </MDBCol>
         </MDBRow>
-        <MDBRow className="p-5 ">
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+        <MDBRow className="p-5 " data-aos="fade">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
@@ -207,7 +214,7 @@ const ProductCard = () => {
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
@@ -255,7 +262,7 @@ const ProductCard = () => {
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
@@ -304,8 +311,8 @@ const ProductCard = () => {
             </MDBCard>
           </MDBCol>
         </MDBRow>
-        <MDBRow className="p-5 ">
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+        <MDBRow className="p-5 " data-aos="fade">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
@@ -353,7 +360,7 @@ const ProductCard = () => {
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
@@ -401,7 +408,7 @@ const ProductCard = () => {
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
@@ -450,8 +457,8 @@ const ProductCard = () => {
             </MDBCard>
           </MDBCol>
         </MDBRow>
-        <MDBRow className="p-5 ">
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+        <MDBRow className="p-5 " data-aos="fade">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
@@ -499,7 +506,7 @@ const ProductCard = () => {
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
@@ -547,7 +554,7 @@ const ProductCard = () => {
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
@@ -596,8 +603,8 @@ const ProductCard = () => {
             </MDBCard>
           </MDBCol>
         </MDBRow>
-        <MDBRow className="p-5 ">
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+        <MDBRow className="p-5 " data-aos="fade">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
@@ -645,7 +652,7 @@ const ProductCard = () => {
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
@@ -693,7 +700,7 @@ const ProductCard = () => {
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
-          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0">
+          <MDBCol md="12" lg="4" className="mb-4 mb-lg-0" data-aos="fade-right">
             <MDBCard>
               <div className="d-flex justify-content-between p-3">
                 <p className="lead mb-0">Today's Combo Offer</p>
