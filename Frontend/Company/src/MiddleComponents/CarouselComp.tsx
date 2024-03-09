@@ -14,28 +14,28 @@ const CarouselComp = () => {
             href="#"
             className="list-group-item bg-secondary list-group-item-action active"
           >
-            Table of Content
+            Product Updates
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Dapibus ac facilisis in
+            Product Review
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Morbi leo risus
+            New Products
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Porta ac consectetur ac
+            Best Sales
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Porta ac consectetur ac
+            Selling Partners
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Porta ac consectetur ac
+            Beta Products
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Porta ac consectetur ac
+            Announcement
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Porta ac consectetur ac
+            Opportunities
           </a>
         </div>
       </div>
@@ -77,34 +77,34 @@ const CarouselComp = () => {
             href="#"
             className="list-group-item bg-danger list-group-item-action active"
           >
-            Updates
+            Company News
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Dapibus ac facilisis in
+            New Promoter
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Morbi leo risus
+            Organization Decision
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Porta ac consectetur ac
+            Our Next Determination
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Morbi leo risus
+            New Ethics
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Porta ac consectetur ac
+            Be a Partner - CEO
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Morbi leo risus
+            Make Your Portfolio Glow
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Porta ac consectetur ac
+            Join as an Intern
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Morbi leo risus
+            Update News
           </a>
           <a href="#" className="list-group-item list-group-item-action">
-            Porta ac consectetur ac
+            Freshers Opportunity
           </a>
         </div>
       </div>
