@@ -10,7 +10,7 @@
 ### Step 3 : 
   To Run the backend Server for API Request
   Run Command
-  ` python manage.pyt runserver ` make sure the port is 8000
+  ` python manage.py runserver ` make sure the port is 8000
 
 ### step 4 : 
   Install npm Libraries with 
