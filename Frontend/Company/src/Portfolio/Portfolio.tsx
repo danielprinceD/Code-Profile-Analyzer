@@ -2,6 +2,8 @@ import "./portfolio.css";
 import Profile from "../assets/profile.webp";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import axios from "axios";
+import AOT from "aos";
+import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { render } from "react-dom";
 import Spinner from "react-bootstrap/Spinner";
@@ -9,6 +11,7 @@ const Portfolio = () => {
   const [formData, setFormData] = useState([{}]);
   const [load, loader] = useState(true);
   useEffect(() => {
+    AOT.init({ duration: 3000 });
     setTimeout(() => {
       loader(false);
     }, 8000);
@@ -24,7 +27,10 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="portfolio-container d-flex flex-column gap-5 flex-wrap align-items-center">
+    <div
+      className="portfolio-container d-flex flex-column gap-5 flex-wrap align-items-center"
+      data-aos="fade"
+    >
       {load ? (
         <>
           <div>
@@ -33,7 +39,7 @@ const Portfolio = () => {
         </>
       ) : (
         formData.map((x) => (
-          <div className="github-container w-75 ">
+          <div className="github-container w-75 " data-aos="slide-right">
             <div className="github-top d-flex flex-column align-items-center">
               <div className="github-top-1">
                 <div className="gh-profile d-flex flex-column align-items-center gap-3">

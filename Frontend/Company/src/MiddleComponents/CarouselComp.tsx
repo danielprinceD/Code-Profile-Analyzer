@@ -4,12 +4,18 @@ import img2 from "../assets/img2.jpg";
 import img3 from "../assets/img3.jpg";
 import img4 from "../assets/img4.jpg";
 import "./carouselcomp.css";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const CarouselComp = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  });
+
   return (
     <div className="carsourel-container">
       <div>
-        <div className="list-group group">
+        <div className="list-group group" data-aos="fade-down">
           <a
             href="#"
             className="list-group-item bg-secondary list-group-item-action active"
@@ -39,7 +45,7 @@ const CarouselComp = () => {
           </a>
         </div>
       </div>
-      <div className="carousel-contents">
+      <div className="carousel-contents" data-aos="fade-down">
         <Carousel>
           <Carousel.Item interval={3500}>
             <img className="d-block w-100" src={img1} alt="Image One" />
@@ -72,7 +78,7 @@ const CarouselComp = () => {
         </Carousel>
       </div>
       <div>
-        <div className="list-group group">
+        <div className="list-group group" data-aos="fade-down">
           <a
             href="#"
             className="list-group-item bg-danger list-group-item-action active"

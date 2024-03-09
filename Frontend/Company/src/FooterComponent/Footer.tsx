@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="FooterContainer" id="foot">
       <div className="foot-content">
-        <div className="container1">
+        <div className="container1" data-aos="slide-right">
           <h2 className="text-danger">About TI</h2>
           <div className="items">
             <a href="">Company</a>
@@ -13,7 +13,7 @@ const Footer = () => {
             <a href="">Events</a>
           </div>
         </div>
-        <div className="container2">
+        <div className="container2" data-aos="zoom-out">
           <h2 className="text-danger">Quick links</h2>
           <div className="items">
             <a href="">Contact us</a>
@@ -22,7 +22,7 @@ const Footer = () => {
             <a href="">Quality & reliablity</a>
           </div>
         </div>
-        <div className="container3">
+        <div className="container3" data-aos="slide-left">
           <h2 className="text-danger">Buying</h2>
           <div className="items">
             <a href="">TI API suites</a>
@@ -32,7 +32,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex flex-column align-items-center justify-content-center gap-2">
+      <div
+        className="d-flex flex-column align-items-center justify-content-center gap-2"
+        data-aos="fade-up"
+      >
         <div className="py-5">
           <h1 className="text-danger">Contact Us</h1>
         </div>

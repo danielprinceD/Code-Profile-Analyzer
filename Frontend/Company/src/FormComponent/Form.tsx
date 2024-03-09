@@ -1,7 +1,8 @@
 import "./form.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Form = () => {
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
@@ -37,13 +38,17 @@ const Form = () => {
       });
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
+
   return (
     <div className="form-container">
       <center>
         <h2 className="">Appilcation Form</h2>
       </center>
       <br />
-      <form action="post">
+      <form action="post" data-aos="zoom-in">
         <div className="form-items">
           <label htmlFor="name">Name : </label>
           <input

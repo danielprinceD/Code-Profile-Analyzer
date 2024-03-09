@@ -1,13 +1,19 @@
 import React from "react";
 import "./exec.css";
 import Profile from "../assets/profile.webp";
+import { useEffect } from "react";
+import AOT from "aos";
+import "aos/dist/aos.css";
 const Executive = () => {
+  useEffect(() => {
+    AOT.init({ duration: 2000, mirror: true });
+  }, []);
   return (
     <div className="exec-container">
-      <div className=" exec-banner d-flex justify-content-center">
+      <div className=" exec-banner d-flex justify-content-center ">
         <h1 className="text-danger">Our Top Executives </h1>
       </div>
-      <div className="profile-container">
+      <div className="profile-container" data-aos="fade-up">
         <div className="profile-left">
           <img src={Profile} alt="" />
           <h2 className="text-danger">Adam</h2>
@@ -39,7 +45,7 @@ const Executive = () => {
           </div>
         </div>
       </div>
-      <div className="profile-container">
+      <div className="profile-container" data-aos="fade-up">
         <div className="profile-left">
           <img src={Profile} alt="" />
           <h2 className="text-danger">Adam</h2>
@@ -71,7 +77,7 @@ const Executive = () => {
           </div>
         </div>
       </div>
-      <div className="profile-container">
+      <div className="profile-container" data-aos="fade-up">
         <div className="profile-left">
           <img src={Profile} alt="" />
           <h2 className="text-danger">Adam</h2>
@@ -103,7 +109,7 @@ const Executive = () => {
           </div>
         </div>
       </div>
-      <div className="profile-container">
+      <div className="profile-container" data-aos="fade-up">
         <div className="profile-left">
           <img src={Profile} alt="" />
           <h2 className="text-danger">Adam</h2>
@@ -135,7 +141,7 @@ const Executive = () => {
           </div>
         </div>
       </div>
-      <div className="profile-container">
+      <div className="profile-container" data-aos="fade-up">
         <div className="profile-left">
           <img src={Profile} alt="" />
           <h2 className="text-danger">Adam</h2>
@@ -167,7 +173,7 @@ const Executive = () => {
           </div>
         </div>
       </div>
-      <div className="profile-container">
+      <div className="profile-container" data-aos="fade-up">
         <div className="profile-left">
           <img src={Profile} alt="" />
           <h2 className="text-danger">Adam</h2>
@@ -199,7 +205,7 @@ const Executive = () => {
           </div>
         </div>
       </div>
-      <div className="profile-container">
+      <div className="profile-container" data-aos="fade-up">
         <div className="profile-left">
           <img src={Profile} alt="" />
           <h2 className="text-danger">Adam</h2>

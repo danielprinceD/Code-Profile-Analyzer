@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "axios": "^1.6.7",
     "blobshape": "^1.0.0",
     "bootstrap": "^5.3.3",
