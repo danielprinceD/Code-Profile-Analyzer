@@ -27,7 +27,7 @@ export const Header = () => {
         </div>
       </div>
       <div className="Nav-bar">
-        <a href="/home">
+        <a href="/">
           <Button className="btn btn-outline-danger" data="Home"></Button>
         </a>
         <span> </span>
