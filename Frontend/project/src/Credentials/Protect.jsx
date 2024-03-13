@@ -4,5 +4,13 @@ import { Navigate } from "react-router-dom";
 
 export const Protect = ({ children }) => {
   const auth = useAuth();
-  return <>{auth.user ? <>{children}</> : <Navigate to="/login" />}</>;
+  return (
+    <>
+      {sessionStorage.getItem("name") ? (
+        <>{children}</>
+      ) : (
+        <Navigate to="/login" />
+      )}
+    </>
+  );
 };

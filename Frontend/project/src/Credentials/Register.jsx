@@ -5,17 +5,43 @@ export const Register = () => {
   const [user, setUser] = useState();
   const [pass, setPass] = useState();
   const [email, setEmail] = useState();
-
+  const [popUp, setPopup] = useState(false);
   let handleSignup = () => {
     axios.post("http://localhost:8000/user", {
       username: user,
       password: pass,
       email: email,
     });
+
+    setPopup(true);
+    setTimeout(() => {
+      setPopup(false);
+    }, 5000);
   };
 
   return (
     <div className="sign-cont">
+      {popUp && (
+        <div
+          className="bg-success"
+          style={{
+            left: 100,
+            padding: 25,
+            color: "white",
+            borderRadius: 20,
+            position: "absolute",
+          }}
+        >
+          <div
+            style={{ display: "flex", flexDirection: "row-reverse", gap: 40 }}
+          >
+            <h5 onClick={() => setPopup(false)} style={{ cursor: "pointer" }}>
+              X
+            </h5>
+            <h5>Successfully Registered</h5>
+          </div>
+        </div>
+      )}
       <form action="#" className="form-si" onSubmit={handleSignup}>
         <h1 className="form-title-si">Sign up Form</h1>
         <div className="firstbtn-si">

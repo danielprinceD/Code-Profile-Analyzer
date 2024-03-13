@@ -32,6 +32,14 @@ export const Header = () => {
         </div>
       </div>
       <div className="Nav-bar">
+        {sessionStorage.getItem("name") && (
+          <div style={{ display: "flex", justifyContent: "right" }}>
+            <p>
+              <span className="text-danger">Username :</span>{" "}
+              {sessionStorage.getItem("name")}
+            </p>
+          </div>
+        )}
         <a href="/">
           <Button className="btn btn-outline-danger" data="Home"></Button>
         </a>
@@ -44,13 +52,14 @@ export const Header = () => {
           <Button className="btn btn-outline-danger" data="Contact Us"></Button>
         </a>
         <span> </span>
-        {auth.user && (
+        {sessionStorage.getItem("name") && (
           <a href="/">
             <button className="btn btn-outline-danger" onClick={logout}>
               Logout
             </button>
           </a>
         )}
+        <div></div>
       </div>
       <div className="abs">
         <button className="btn btn-outline-danger px-3 py-2"> = </button>

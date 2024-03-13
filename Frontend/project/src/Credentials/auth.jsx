@@ -7,11 +7,13 @@ export const Auth = ({ children }) => {
   const [user, setUser] = useState("");
   const login = (name) => {
     setUser(name);
+    sessionStorage.setItem("name", name);
     navigate("/");
     alert("Welcome " + name);
   };
   const logout = () => {
     setUser("");
+    sessionStorage.setItem("name", "");
     navigate("/");
   };
   return (

@@ -33,7 +33,7 @@ var NavBar = () => {
               About Us
             </NavLink>
           </li>
-          {auth.user && (
+          {sessionStorage.getItem("name") && (
             <li className="nav-item active px-4">
               <NavLink
                 className="nav-link text-white hover-change px-5"
@@ -43,7 +43,7 @@ var NavBar = () => {
               </NavLink>
             </li>
           )}
-          {!auth.user && (
+          {!sessionStorage.getItem("name") && (
             <>
               <li>
                 <NavLink
