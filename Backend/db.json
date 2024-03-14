@@ -1,4 +1,20 @@
 {
+  "contact": [
+    {
+      "id": "bcf3",
+      "fname": "Daniel",
+      "lname": "Prince",
+      "phone_number": "7010954478",
+      "email": "d.danielprince2003@gmail.com"
+    },
+    {
+      "id": "2644",
+      "fname": "Daniel",
+      "lname": "Prince",
+      "phone_number": "7010954478",
+      "email": "d.danielprince2003@gmail.com"
+    }
+  ],
   "user": [
     {
       "id": "d62c",

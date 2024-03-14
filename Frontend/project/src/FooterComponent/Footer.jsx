@@ -1,6 +1,21 @@
 import "./footer.css";
-
+import axios from "axios";
+import { useState } from "react";
 const Footer = () => {
+  const [first, setFname] = useState("");
+  const [last, setLname] = useState("");
+  const [ph, setPh] = useState("");
+  const [email, setEmail] = useState("");
+  const handleSubmit = () => {
+    axios
+      .post("http://localhost:8001/contact", {
+        fname: first,
+        lname: last,
+        phone_number: ph,
+        email: email,
+      })
+      .then(() => alert("We will contact you Soon"));
+  };
   return (
     <div className="FooterContainer" id="foot">
       <div className="foot-content">
@@ -62,13 +77,15 @@ const Footer = () => {
               </table>
             </center>
           </div>
-          <form className="d-flex flex-column gap-4">
+          <form onSubmit={handleSubmit} className="d-flex flex-column gap-4">
             <div className="row">
               <div className="col">
                 <input
                   type="text"
                   className="form-control"
                   placeholder="First name"
+                  value={first}
+                  onChange={(e) => setFname(e.target.value)}
                 />
               </div>
               <div className="col">
@@ -76,6 +93,8 @@ const Footer = () => {
                   type="text"
                   className="form-control"
                   placeholder="Last name"
+                  value={last}
+                  onChange={(e) => setLname(e.target.value)}
                 />
               </div>
             </div>
@@ -85,6 +104,8 @@ const Footer = () => {
                   type="text"
                   className="form-control"
                   placeholder="Phone Number"
+                  value={ph}
+                  onChange={(e) => setPh(e.target.value)}
                 />
               </div>
             </div>
@@ -94,12 +115,16 @@ const Footer = () => {
                   type="text"
                   className="form-control"
                   placeholder="Email Address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
             </div>
             <center>
               <div>
-                <button className="btn btn-danger ">Submit</button>
+                <button type="submit" className="btn btn-danger ">
+                  Submit
+                </button>
               </div>
             </center>
           </form>

@@ -17,7 +17,7 @@ const Portfolio = () => {
     }, 8000);
     axios({
       method: "get",
-      url: "http://127.0.0.1:8001/get/?format=json",
+      url: "http://127.0.0.1:8000/get/?format=json",
     })
       .then((req) => {
         setFormData(req.data);

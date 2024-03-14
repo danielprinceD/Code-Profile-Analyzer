@@ -7,7 +7,7 @@ export const Register = () => {
   const [email, setEmail] = useState();
   const [popUp, setPopup] = useState(false);
   let handleSignup = () => {
-    axios.post("http://localhost:8000/user", {
+    axios.post("http://localhost:8001/user", {
       username: user,
       password: pass,
       email: email,
